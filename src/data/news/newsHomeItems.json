@@ -1,0 +1,89 @@
+[
+    {
+        "id": "1",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 3,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "2",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 0,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "3",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 1,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "4",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 3,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "5",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 3,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "6",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 1,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "7",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 3,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    },
+    {
+        "id": "8",
+        "title": "Neque porro quisquam est qui dolorem at vero do",
+        "card-title": "Neque porro quisquam est qui dolorem at vero do",
+        "link": "/news-single-post",
+        "imgLink": "assets/img/placeholder/500x333.jpg",
+        "author": "by admin",
+        "comments": 3,
+        "category": "Events",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+    }
+]

@@ -1,0 +1,94 @@
+//=================================================
+// Single
+//=================================================
+
+#single {
+    .single-content {
+        .img {
+            margin-bottom: $space_sm;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .meta {
+            margin-top: $space_sm - 0.415rem;
+            font-family: $font_primary_extra_bold;
+            font-weight: 800;
+            color: $body_headline_color;
+
+            span {
+                margin-right: 0.263rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.date {
+                    margin-right: $space_xs;
+                }
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: $body_links_hover_color;
+                    }
+                }
+            }
+        }
+
+        .description {
+            margin-top: $space_sm - 0.415rem;
+        }
+
+        .tags {
+            margin-top: $space_md - 0.789rem;
+            
+            p {
+                display: table;
+                line-height: normal;
+                word-break: break-all;
+                margin-top: -0.526rem;
+
+                &:before, &:after {
+                    display: none;
+                }
+
+                a {
+                    @extend .btn;
+                    @extend .btn-primary;
+                    @extend .btn-sm;
+                    @extend .min-w-auto;
+                    margin-right: 0.526rem;
+                    margin-top:  0.526rem;
+                    padding: 0.32rem 0.38rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=============================
+// Single post
+=============================*/
+.single-post, [class*='single-'] {
+    #single {
+        .single-content {
+            .img {
+                max-height: 25rem;
+
+                &.object-fit {
+                    &:before {
+                        padding-top: 25rem;
+                    }
+                }
+            }
+        }
+    }
+}

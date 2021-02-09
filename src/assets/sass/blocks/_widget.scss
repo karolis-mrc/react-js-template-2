@@ -1,0 +1,275 @@
+//=================================================
+// Widget
+//=================================================
+
+.widget-area {
+    @media #{$media_lg} {
+        margin-top: $space_xl;
+    }
+}
+
+.widget-area, [class*='widget-container'] {
+    .widget {
+        position: relative;
+        border: 1px solid $widget_border_color;
+        background: $widget_background_color;
+        padding: $space_xs;
+        margin-bottom: $space_lg;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $body_text_primary_color;
+
+            &:hover {
+                color: $body_links_hover_color;
+            }
+        }
+
+        img, svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .items {
+            .item {
+                margin-bottom: 2.105rem !important;
+
+                &:before, &:after {
+                    display: none;
+                }
+
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+
+        // Widget title
+        .widget-title {
+            font-family: $font_primary_bold;
+            font-weight: 700;
+            margin-bottom: $space_pc_secondary - $h5_font_mb !important;
+            color: $widget_headline_color;
+
+            a {
+                color: $widget_headline_color;
+            }
+        }
+
+        // Widget block: Search
+        &.widget_search {
+            .search-form {
+                [class*='form-'] {
+                    padding-top: 0;
+
+                    &::placeholder {
+                        color: $body_text_secondary_color;
+                    }
+                }
+
+                .input-group-append {
+                    top: 0.105rem;
+                    z-index: 9;
+
+                    .btn {
+                        color: $gray-dark;
+                        font-size: 0.842rem;
+
+                        &:hover {
+                            color: $body_links_hover_color;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Widget block: Gallery
+        &.widget_media_gallery {
+            .gallery {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            
+                .gallery-item {
+                    display: inline-block;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+            } 
+        }
+
+        // Widget block: Tag
+        &.widget_tag_cloud {
+            .tagcloud {
+                display: table;
+                line-height: normal;
+                word-break: break-all;
+                margin-top: -0.526rem;
+
+                .tag-cloud-link {
+                    @extend .btn;
+                    @extend .btn-primary;
+                    @extend .btn-sm;
+                    @extend .min-w-auto;
+                    margin-right: 0.526rem;
+                    margin-top:  0.526rem;
+                    padding: 0.32rem 0.38rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }        
+        }
+
+        // Widget block: Calendar
+        &.widget_calendar {
+            .calendar_wrap {
+                text-align: center;
+                
+                caption {
+                    margin-top: 1.39rem;
+                }
+                
+                a {
+                    font-weight: bold;
+                }
+                
+                table {
+                    width:100%;
+                    table-layout: fixed;
+                    background-color: $white;
+                    
+                    td {
+                        padding: 0.8rem 0;
+                    }
+                }
+            }
+        }
+
+        // Widget block: Recent comments
+        &.widget_recent_comments {
+            ul {
+                @extend .list-unstyled;
+
+                li {
+                    &.recentcomments {
+                        border-bottom: 1px solid $body_border_color;
+                        margin-bottom: 1.053rem !important;
+                        padding-bottom: 1.053rem;
+
+                        &:after {
+                            margin-bottom: -0.3em;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0;
+                            margin-bottom: 0 !important;
+                            border: 0;
+                        }
+
+                        a {
+                            display: block;
+                            margin-top: 0.632rem;
+                            font-size: 0.737rem;
+                            color: $body_text_secondary_color;
+
+                            &:hover {
+                                color: $body_links_hover_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Widget block: Recent entries
+        &.widget_recent_entries {
+            .items {
+                .item {
+                    @extend .style-default;
+
+                    .row {
+                        $widget_xs: 1.579rem;
+
+                        &.gutter-width-xs {
+                            margin-left: -$widget_xs / 2;
+                            margin-right: -$widget_xs / 2;
+
+                            @media #{$media_xl} {
+                                margin-left: -$widget_xs / 3.3;
+                                margin-right: -$widget_xs / 3.3;
+                            }
+
+                            @media #{$media_sm} {
+                                margin-left: 0;
+                                margin-right: 0;
+                            }
+
+                            // Col
+                            > .col,
+                            > [class*='col-'] {
+                                padding-left: $widget_xs / 2;
+                                padding-right: $widget_xs/ 2;
+
+                                @media #{$media_xl} {
+                                    padding-left: $widget_xs / 3.3;
+                                    padding-right: $widget_xs / 3.3;
+                                }
+                            }
+                        }
+
+                        .col-3 {
+                            flex: 0 0 30.22%;
+                            max-width: 30.22%;
+
+                            @media #{$media_lg} {
+                                max-width: 4.474rem;
+                            }
+                        }
+
+                        .col-9 {
+                            flex: 0 0 69.78%;
+                            max-width: 69.78%;
+
+                            p {
+                                margin-bottom: 1.263rem !important;
+
+                                &:last-child {
+                                    margin-bottom: 0 !important;
+                                }
+
+                                &.p-small {
+                                    color: $body_text_secondary_color;
+                                }
+                            }
+
+                            a {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Elementor
+[class*='widget-card'] {
+    height: 100%;
+    
+    [class*='widget-container'] {
+        height: 100%;
+    }
+}
+
+.elementor-widget {
+    position: static !important;
+}

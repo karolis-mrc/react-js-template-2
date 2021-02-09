@@ -1,0 +1,71 @@
+//=================================================
+// Blog
+//=================================================
+
+/*=============================
+// Card post
+=============================*/
+.card-post {
+    @extend .style-default;
+    background-color: $card_background_color;
+    border: 0;
+    height: 100%;
+
+    .img {
+        max-height: 16.65rem;
+
+        &.object-fit {
+            &:before {
+                padding-top: 16.65rem;
+            }
+        }
+    }
+
+    .card-body {
+        padding: $card-spacer-y 0;
+        padding-bottom: 0;
+
+        .card-title {
+            margin-bottom: 1.579rem;
+
+            a {
+                display: block;
+                color: $body_links_color;
+                word-break: break-word;
+                -webkit-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+
+                &:hover {
+                    color: $body_links_hover_color;
+                }
+            }
+        }
+
+        .card-meta {
+            position: relative;
+            margin-bottom: $space_xs - 0.575rem;
+        }
+
+        .card-text {
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    }
+
+    &.sticky {
+        box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.09);
+
+        .card-body {
+            padding: $card_spacer_x;
+        }
+    }
+
+    &.no-thumbnail {
+        .card-body {
+            padding-top: 0;
+        }
+    }
+}

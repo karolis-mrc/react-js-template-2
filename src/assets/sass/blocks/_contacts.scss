@@ -1,0 +1,59 @@
+//=================================================
+// Contacts
+//=================================================
+
+#contacts {
+	.img-no-wrap-1 {
+		margin-left: 17.211%;
+
+		@media #{$media_sm} {
+			margin-left: -50vw;
+		}
+	}
+}
+
+.contact-list-group {
+	.list-group {
+		@extend .justify-content-end;
+
+		@media #{$media_sm} {
+			flex-direction: column;
+		}
+
+		.list-group-item {
+			text-align: right;
+			border: 0;
+			padding: 0;
+			margin-left: 5.88%;
+			max-width: 18.2rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			@media #{$media_sm} {
+				padding-bottom: $list-group-item-padding-y;
+				margin: auto 0 0 0;
+				text-align: left;
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+
+			.list-group-item-title {
+				color: $body_headline_color;
+			}
+
+			.list-group-item-text {
+				a {
+					color: $body_text_primary_color;
+
+					&:hover {
+						color: $body_links_hover_color;
+					}
+				}
+			}
+		}
+	}
+}

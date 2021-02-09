@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Conferences",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/480x480.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Events Organizations",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/480x480.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Private Parties",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/480x480.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Festivals",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/480x480.jpg"
+    }
+]

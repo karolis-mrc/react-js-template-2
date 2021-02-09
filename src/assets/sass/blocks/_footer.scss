@@ -1,0 +1,88 @@
+//=================================================
+// Footer
+//=================================================
+
+.site-footer {
+    background-color: $footer_background_color;
+
+    .wrapper {
+        position: relative;
+        padding-top: $footer_padding_t;
+        padding-bottom: $footer_padding_b;
+
+        .footer-widgets {
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: -$space_xs;
+
+            @media #{$media_lg} {
+                margin-top: $space_lg;
+            }
+
+            .widget {
+                flex-basis: calc(20% - 5%);
+                text-align: right;
+                max-width: 360px;
+                margin-left: 5%;
+                margin-bottom: $space_xs;
+
+                @media #{$media_lg} {
+                    text-align: left;
+                    margin-left: 0;
+                    margin-right: 2rem;
+                }
+
+                p {
+                    margin-bottom: 0.675rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .footer {
+            margin-top: $space_lg;
+
+            @media #{$media_lg} {
+                margin-top: $space_lg + 1rem;
+
+                .d-flex {
+                    > div {
+                        margin-bottom: $space_xs;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                p {
+                    font-size: $f_size_df;
+                }
+
+                @media #{$media_lg} {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Footer color
+    color: $footer_color;
+
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+    del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+    ol, ul, li, fieldset, legend, label, span, caption, figcaption, details, hgroup, summary, mark, audio, video {
+        color: inherit;
+    }
+
+    a {
+        &:hover {
+            color: $body_links_hover_color;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+//=================================================
+// Comments
+//=================================================
+
+#comments {
+    .comment-list {
+        margin-top: $space_lg;
+
+        .comment {
+            margin-bottom: $space_lg;
+        
+            &:before, &:after {
+                display: none;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .comment-wrapper {
+                .comment-details {
+                    background-color: $comment_background_color;
+                    padding: $space_xs;
+
+                    .comment-header {
+                        .comment-header-left {
+                            padding-right: 2rem;
+
+                            img {
+                                width: 5.789rem !important;
+                                height: 5.789rem !important;
+                            }
+                        }
+
+                        .comment-header-right {
+                            .comment-author {
+                                font-family: $font_primary_bold;
+                                font-weight: 700;
+                                margin-bottom: 0;
+                            }
+
+                            .comment-time {
+                                margin-top: 0.79rem;
+                            }
+                        }
+                    }
+
+                    .comment-content {
+                        margin-top: $space_xs;
+                    }
+
+                    .comment-reply {
+                        margin-top: $space_xs;
+
+                        i {
+                            font-size: $f_size_df;
+                            margin-right: 0.35rem;
+                        }
+
+                        span, i {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+
+            .children {
+                margin-left: $space_lg;
+
+                .comment {
+                    margin-top: $space_lg;
+                }
+            }
+        }
+
+        #respond {
+            margin-top: $space_lg;
+            margin-bottom: $space_lg;
+        }
+    }
+
+    // Respond
+    #respond {
+        .comment-reply-title {
+            color: $body_headline_color;
+            margin-bottom: $space_lg - 0.579rem;
+        }
+
+        .comment-notes {
+        }
+
+        .comment-form {
+            max-width: 32.789rem;
+
+            .comment-notes, .logged-in-as {
+                @include lhCrop-b(1.9, 0.80);
+                @include lhCrop-a(1.9, 0.75);
+            }
+            
+            .comment-form-cookies-consent {
+                label {
+                    font-size: 0.895rem;
+                    color: $body_text_primary_color;
+                }
+            }
+            
+            .form-submit {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

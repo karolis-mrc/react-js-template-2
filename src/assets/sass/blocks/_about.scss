@@ -1,0 +1,38 @@
+//=================================================
+// About
+//=================================================
+
+.about-content-primary {
+	@extend .style-default;
+	margin-left: 17.211%;
+
+	@media #{$media_sm} {
+		margin-left: 0;
+	}
+}
+
+.about-content-secondary {
+	@extend .style-default;
+
+	.col-last {
+		padding-left: 9.851% !important;
+
+		@media #{$media_sm} {
+			padding-left: 0 !important;
+		}
+
+		.description {
+			.item {
+				padding-top: $space_lg;
+
+				&:first-child {
+					padding-top: 0;
+
+					@media #{$media_sm} {
+						padding-top: $space_lg;
+					}
+				}
+			}
+		}
+	}
+}

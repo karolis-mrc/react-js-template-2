@@ -1,0 +1,88 @@
+//=================================================
+// Header
+//=================================================
+
+.site-header {
+    color: $header_color;
+
+    .wrapper {
+        background-color: $header_background_color;
+        padding-top: $header_padding_t;
+        padding-bottom: $header_padding_b;
+
+        .header-content {
+            .header-logo {
+                margin-right: 3.947rem;
+            }
+        }
+
+        .header-menu {
+            position: relative;
+
+            .menu-toggle {
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+                right: 0;
+
+                .menu {
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: $header_background_color;
+                    width: 18.421rem;
+                    height: 100%;
+                    padding-top: $space_xl;
+                    padding-bottom: $header_padding_b;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    -ms-overflow-style: none;
+                    overflow: -moz-scrollbars-none;
+                    scrollbar-width: none;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    @media #{$media_md} {
+                        padding-top: $header_padding_t;
+                        padding-bottom: $header_padding_b;
+                        top: 100%;
+                        width: 100%;
+                    }
+
+                    .menu-primary {
+                        display: flex;
+                        justify-content: flex-end;
+                        min-height: 100%;
+                        padding-right: 2.632rem;
+
+                        @media #{$media_md} {
+                            padding-right: 0;
+                            margin-right: $wrapper_p_r_xl;
+                        }
+
+                        @media #{$media_sm} {
+                            margin-right: $wrapper_p_r_sm;
+                        }
+
+                        .nav {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.show {
+                    .menu {
+                        .menu-primary {
+                            .nav {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

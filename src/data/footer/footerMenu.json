@@ -1,0 +1,15 @@
+[
+    {
+        "id": "2",
+        "title": "LinkedIn",
+        "link": "https://www.adveits.com",
+        "icon": "fab fa-linkedin-in"
+    },
+    {
+        "id": "1",
+        "title": "Facebook",
+        "link": "https://www.adveits.com",
+        "icon": "fab fa-facebook-f"
+    }
+
+]

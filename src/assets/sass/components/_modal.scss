@@ -1,0 +1,194 @@
+//=================================================
+// Modal
+//=================================================
+
+.modal {
+  background-color: $modal_background_color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  min-width: 320px;
+
+  .modal-dialog {
+    .modal-header {
+      .close {
+        &.btn {
+          padding: 0.75rem;
+          margin: 0 -0.75rem 0 auto;
+          font-size: 1.263rem;
+        }
+
+        .adveits-i.adv-close span {
+          background-color: $modal_content_color;
+        }
+      }
+    }
+
+    .modal-content {
+      color: $modal_content_color;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      address,
+      cit,
+      code,
+      del,
+      dfn,
+      em,
+      ins,
+      q,
+      samp,
+      small,
+      strong,
+      sub,
+      sup,
+      b,
+      i,
+      hr,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      legend,
+      label,
+      span,
+      caption,
+      figcaption,
+      details,
+      hgroup,
+      summary,
+      mark,
+      audio,
+      video {
+        color: inherit;
+      }
+
+      .close {
+        span {
+          color: $modal_content_color;
+        }
+      }
+
+      .btn {
+        color: inherit;
+
+        .adveits-i {
+          span {
+            background-color: $modal_content_color;
+          }
+        }
+      }
+
+      a,
+      .btn {
+        &:hover {
+          color: $body_links_hover_color;
+
+          .adveits-i {
+            span {
+              background-color: $body_links_hover_color;
+            }
+          }
+        }
+      }
+
+      input,
+      select,
+      textarea {
+        color: $modal_content_color;
+        border-color: rgba($modal_content_color, 0.3);
+
+        &:focus {
+          border-color: $modal_content_color;
+        }
+
+        &::placeholder {
+          color: rgba($modal_content_color, 0.47);
+        }
+      }
+    }
+  }
+}
+
+/*=============================
+// Modal size
+=============================*/
+.modal-full {
+  max-width: 100%;
+  margin: 0;
+}
+
+/*=============================
+// Modal header
+=============================*/
+.modal-header-top {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
+
+/*=============================
+// Modal body
+=============================*/
+.modal-body-centered {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100vh;
+  }
+}
+
+/*=============================
+// Modal title
+=============================*/
+.modal-title {
+  margin-bottom: 0 !important;
+  @extend .after;
+}
+
+/*=============================
+// Modal menu
+=============================*/
+.modal.menu-modal {
+  .modal-body {
+    .search-toggle {
+      text-align: left;
+      padding-top: $header_padding_t + $header_padding_b + 0.15rem;
+    }
+
+    .menu-primary {
+      padding-top: $header_padding_t + $header_padding_b;
+      padding-bottom: $header_padding_b;
+    }
+  }
+}
+
+/*=============================
+// Modal search
+=============================*/
+.modal.search-modal {
+  .modal-body {
+    form {
+      width: 100%;
+      max-width: 1082px;
+      margin: auto;
+    }
+  }
+}

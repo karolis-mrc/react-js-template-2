@@ -1,0 +1,89 @@
+//=================================================
+// 404
+//=================================================
+
+.error404 {
+    #page-content {
+        .content {
+            .text {
+                max-width: 47.3rem;
+                padding-top: $space_lg;
+                @extend .p-large;
+            }
+
+            .form {
+                max-width: 52.5rem;
+                padding-top: $space_lg;
+            }
+
+            .button {
+                padding-top: $space_lg;
+            }
+        }
+    }
+
+    @media #{$media_md} {
+        .w-75 {
+            width: 100% !important;
+        }
+    }
+
+    .site-footer {
+        .wrapper {
+            padding-top: 0;
+
+            .footer-widgets {
+                margin-top: 0;
+            }
+        }
+    }
+
+    // Color
+    background-color: $error_page_background_color;
+    color: $error_page_color;
+
+    .site-header .wrapper {
+        background-color: $error_page_background_color;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+    del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+    ol, ul, li, fieldset, legend, label, span, caption, figcaption, details, hgroup, summary, mark, audio, video {
+        color: inherit !important;
+    }
+
+    .btn {
+        color: inherit !important;
+
+        .adveits-i {
+            span {
+                background-color: $error_page_color !important;
+            }
+        }
+    }
+
+    a, .btn {
+        &:hover {
+            color: $body_links_hover_color !important;
+
+            .adveits-i {
+                span {
+                    background-color: $body_links_hover_color !important;
+                }
+            }
+        }
+    }
+
+    input, select, textarea {
+        color: $error_page_color !important;
+        border-color: rgba($error_page_color, 0.30)!important;
+
+        &:focus {
+            border-color: $error_page_color !important;
+        }
+
+        &::placeholder {
+            color: rgba($error_page_color, 0.47) !important;
+        }
+    }
+}
